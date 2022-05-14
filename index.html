@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="desc">
+    <title>Сколько дней до ОГЭ?</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/root.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="category">
+            <div class="flex-row choose">
+                <p>Я сдаю:</p>
+                <button disabled>Русский язык</button>
+                <button disabled>Математика</button>
+                <button id="button__1" onclick='chooseExam(1)'>Иностранный язык</button>
+                <button id="button__2" onclick='chooseExam(2)'>Обществознание</button>
+                <button id="button__3" onclick='chooseExam(3)'>История</button>
+                <button id="button__4" onclick='chooseExam(4)'>Физика</button>
+                <button id="button__5" onclick='chooseExam(5)'>Биология</button>
+                <button id="button__6" onclick='chooseExam(6)'>Химия</button>
+                <button id="button__7" onclick='chooseExam(7)'>Информатика</button>
+                <button id="button__8" onclick='chooseExam(8)'>География</button>
+                <button id="button__9" onclick='chooseExam(9)'>Литература</button>
+                <p id="error">максимум 2 предмета!</p>
+            </div>
+        </div>
+        <div class="category">
+            <div class="flex-row">
+                <h1>До начала периода сдачи ОГЭ осталось:</h1>
+                <p class="textWithH" id="daysToFirstExam" style="margin-top: 5px;">30 дней</p>
+            </div>
+            <p class="note bigNote">ОГЭ в 2022 году начинается 20 мая</p>
+        </div>
+        <div class="other-obj marBot">
+            <h2>Основные предметы:</h2>
+            <div class="category">
+                <div class="flex-row">
+                    <div class="flex-row">
+                        <h3 class="act">Русский язык</h3>
+                        <h3>через:</h3>
+                    </div>
+                    <p class="textWithH3" id="daysToRussianExam">30 дней</p>
+                </div>
+                <p class="note">ОГЭ в 2022 году по русскому языку начинается 15 июня</p>
+            </div>
+            <div class="category">
+                <div class="flex-row">
+                    <div class="flex-row">
+                        <h3 class="act">Математика</h3>
+                        <h3>через:</h3>
+                    </div>
+                    <p class="textWithH3" id="daysToMathExam">30 дней</p>
+                </div>
+                <p class="note">ОГЭ в 2022 году по математике начинается 24 мая</p>
+            </div>
+        </div>
+        <div class="other-obj">
+            <h2>Предметы по выбору:</h2>
+            <div class="category" id="cat-lang">
+                <div class="flex-row">
+                    <div class="flex-row">
+                        <h3 class="act">Иностранные языки</h3>
+                        <h3>через:</h3>
+                    </div>
+                    <p class="textWithH3" id="daysToLangExam">30 дней</p>
+                </div>
+                <p class="note">ОГЭ в 2022 году по иностранным языкам начинается 20 мая</p>
+            </div>
+            <div class="category" id="cat-pravo">
+                <div class="flex-row">
+                    <div class="flex-row">
+                        <h3 class="act">Обществознание</h3>
+                        <h3>через:</h3>
+                    </div>
+                    <p class="textWithH3" id="daysToPravoExam">30 дней</p>
+                </div>
+                <p class="note">ОГЭ в 2022 году по обществознанию начинается 27 мая</p>
+            </div>
+            <div class="category" id="cat-history">
+                <div class="flex-row">
+                    <div class="flex-row">
+                        <h3 class="act">История / Физика / Биология / Химия</h3>
+                        <h3>через:</h3>
+                    </div>
+                    <p class="textWithH3" id="daysToHistoryExam">30 дней</p>
+                </div>
+                <p class="note">ОГЭ в 2022 году по истории / физике / биологии / химии начинается 1 июня</p>
+            </div>
+            <div class="category" id="cat-biology">
+                <div class="flex-row">
+                    <div class="flex-row">
+                        <h3 class="act">Биология / Информатика / География / Химия</h3>
+                        <h3>через:</h3>
+                    </div>
+                    <p class="textWithH3" id="daysToBiologyExam">30 дней</p>
+                </div>
+                <p class="note">ОГЭ в 2022 году по Биологии / Информатике / Географии / Химии начинается 7 июня</p>
+            </div>
+            <div class="category" id="cat-litra">
+                <div class="flex-row">
+                    <div class="flex-row">
+                        <h3 class="act">Литература / Физика / Информатика / География</h3>
+                        <h3>через:</h3>
+                    </div>
+                    <p class="textWithH3" id="daysToLitraExam">30 дней</p>
+                </div>
+                <p class="note">ОГЭ в 2022 году по Литературе / Физике / Информатике / Географии начинается 10 июня</p>
+            </div>
+        </div>
+		<div class="other-obj">
+            <p class="category" style="color: darkgrey;">author: github@roso1nik</p>
+        </div>
+    </main>
+
+
+    <noscript>enable JS</noscript>
+    <script src="js/main.js"></script>
+</body>
+</html>

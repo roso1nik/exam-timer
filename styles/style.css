@@ -1,0 +1,97 @@
+/*
+
+    AUTHOR: ROSOLNIK
+    NO TO COPY
+
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+body {
+    background-color: #282828;
+    color: #e8eaed;
+}
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+	transition: all 0.3s ease
+}
+footer {
+    width: 100%;
+    background-color: #101010;
+    padding: 20px;
+}
+h1 {font-weight: 900;}
+h2 {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+h3 {font-weight: 300;}
+button {
+    cursor: pointer;
+    border: 1px solid #000;
+    white-space: nowrap;
+    padding: 10px 20px;
+    transition: all 0.15s ease;
+}
+button:disabled {
+    background-color: rgb(65, 105, 225, 0.3);
+    color: rgb(255, 255, 255, 0.3);
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 10px;
+}
+.flex-column {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 10px;
+}
+.textWithH {font-size: 32px;font-weight: 300;}
+.textWithH {font-size: 19px;font-weight: 300;}
+.note {color: darkgrey;}
+.category {width: 70%;}
+.bigNote {font-size: 21px;}
+.other-obj {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.act {font-weight: bold;font-style: italic;}
+.marBot {margin-bottom: 50px;}
+.choose {
+    flex-wrap: wrap;
+    white-space: nowrap;
+	transition: all 0.3s ease;
+}
+#error {display: none;color: tomato;transition: all 0.3s ease}
+
+/* MEDIA */
+
+@media (max-width: 768px) and (min-width: 550px) {
+	main {padding-top: 100px;}
+	.choose {gap: 5px;}
+}
+@media (max-width: 549px) and (min-width: 0px) {
+	main {padding-top: 75px;}
+	.choose {gap: 3px;}
+}
