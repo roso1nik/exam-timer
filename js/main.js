@@ -420,10 +420,10 @@ function chooseExam(el) {
 const date__FirstDay = 20; // день
 const date__FirstMonth = 5; // номер месяца
 // русский
-const date__RussianDay = 15;
+const date__RussianDay = 7;
 const date__RussianMonth = 6;
 // математика
-const date__MathDay = 24;
+const date__MathDay = 23;
 const date__MathMonth = 5;
 // обществознание
 const date__PravoDay = 27;
@@ -435,7 +435,7 @@ const date__HistoryMonth = 6;
 const date__BiologyDay = 7;
 const date__BiologyMonth = 6;
 // литература
-const date__LitraDay = 10;
+const date__LitraDay = 22;
 const date__LitraMonth = 6;
 
 
